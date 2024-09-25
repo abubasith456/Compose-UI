@@ -23,8 +23,7 @@ For example, in Compose, creating a text input field or a button is as simple as
 ### Benefits of Jetpack Compose:
 - **Single Language:** With Jetpack Compose, you no longer need to switch between XML and Kotlin/Java for UI development. Compose allows you to build UIs directly in Kotlin, creating a more unified codebase.<br>
 In the example below, a simple UI is defined using Kotlin:
-
-
+```
     @Composable
     fun SimpleUI() {
         Column(modifier = Modifier.fillMaxSize(), horizontalAlignment = Alignment.CenterHorizontally)   {
@@ -33,11 +32,10 @@ In the example below, a simple UI is defined using Kotlin:
                 Text(text = "Click Me")
             }
     }
-
-- **Declarative UI:** Jetpack Compose simplifies the way you build UI by using a declarative approach. Instead of manually updating the UI when data changes, you simply describe what the UI should look like based on its current state, and Compose takes care of rendering it. <br>
+```
+- **Declarative UI:** Jetpack Compose simplifies the way you build UI by using a declarative approach. Instead of manually updating the UI when data changes, you simply describe what the UI should look like based on its current state, and Compose takes care of rendering it. <br/>
 In the example below, we use a Greeting composable to display a greeting message that changes when a button is clicked:
-
-
+```
     @Composable
     fun Greeting() {
         var name by remember { mutableStateOf("World") }
@@ -48,12 +46,11 @@ In the example below, we use a Greeting composable to display a greeting message
             }
         }
     }
-
+```
 In this code, we use remember to create a name state variable initialized to "World." This keeps the value consistent across recompositions. The Text composable displays the current name, and when the button is clicked, the onClick lambda updates it to "Compose," automatically reflecting the change in the UI.
-- **Simpler Customization:** Jetpack Compose simplifies UI element customization by allowing you to modify components directly using Kotlin functions. Unlike traditional methods that often require extending classes or creating custom XML layouts, Compose enables quick and easy adjustments with modifiers. <br>
+- **Simpler Customization:** Jetpack Compose simplifies UI element customization by allowing you to modify components directly using Kotlin functions. Unlike traditional methods that often require extending classes or creating custom XML layouts, Compose enables quick and easy adjustments with modifiers. <br/>
 For example, you can create a custom button with just a few lines of code by applying modifiers such as padding, border, and background color.
-
-
+```
     @Composable
     fun CustomButton(text: String, onClick: () -> Unit) {
         Button(
@@ -75,6 +72,7 @@ For example, you can create a custom button with just a few lines of code by app
             }
         }
     }
-
+```
+<br/>
 To conclude, Jetpack Compose is more than just a new way to build UIs—it’s a game changer for Android development. By moving away from XML layouts and embracing a composition model, Compose makes the development process easier and more flexible, allowing developers to build dynamic UIs with less code. Its modern, declarative approach is set to become the standard for Android apps. 
-There's much more to explore! In upcoming posts, we'll cover advanced topics like effective state management, and how to migrate existing projects to Jetpack Compose. Stay tuned for **Part 2**!
+There's much more to explore! In upcoming posts, we'll cover advanced topics like effective state management, and how to migrate existing projects to Jetpack Compose. Stay tuned for <b>Part 2<b/>!
