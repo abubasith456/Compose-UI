@@ -5,12 +5,12 @@
 
 # How Jetpack Compose Redefines Android UI with Kotlin
 
-  With Android Jetpack Compose, the way we build UI in Android has completely transformed. Unlike the traditional approach where XML files handle the UI while Kotlin or Java handles the logic, Compose allows you to build both the UI and functionality using a single language Kotlin.
+With Android Jetpack Compose, the way we build UI in Android has completely transformed. Unlike the traditional approach where XML files handle the UI while Kotlin or Java handles the logic, Compose allows you to build both the UI and functionality using a single language Kotlin.
 
 Gone are the days of switching between XML layouts and Java/Kotlin code. In Compose, everything happens in one place, making development faster and more efficient. So why is it called "Compose"?
 
 ### Traditional UI: Inheritance-based System
-  In the old Android UI system, every visual element you added to your screen had to inherit from a base class—View. For example, if you wanted to show text, you'd use TextView, which inherits from View. Similarly, interactive components like EditText also inherit from TextView and ultimately from View.
+In the old Android UI system, every visual element you added to your screen had to inherit from a base class—View. For example, if you wanted to show text, you'd use TextView, which inherits from View. Similarly, interactive components like EditText also inherit from TextView and ultimately from View.
 
 <div align='center'>
      <h4><b>The hierarchy looked something like this:</b></h4>
@@ -18,7 +18,7 @@ Gone are the days of switching between XML layouts and Java/Kotlin code. In Comp
 </div>
 
 ### Compose UI: A Shift to Composition
-  Compose changes this paradigm completely by using a composition-based system instead of inheritance. In Compose, your UI elements don’t inherit from a base class like View. Instead, you "compose" your UI by combining different smaller elements (composables) together. This flexibility allows you to easily build complex UIs by reusing and combining smaller building blocks.
+Compose changes this paradigm completely by using a composition-based system instead of inheritance. In Compose, your UI elements don’t inherit from a base class like View. Instead, you "compose" your UI by combining different smaller elements (composables) together. This flexibility allows you to easily build complex UIs by reusing and combining smaller building blocks.
 
 For example, in Compose, creating a text input field or a button is as simple as writing a few lines of Kotlin code, all without the need for XML:
 
@@ -82,4 +82,4 @@ For example, you can create a custom button with just a few lines of code by app
 ```
 <br/>
 To conclude, Jetpack Compose is more than just a new way to build UIs—it’s a game changer for Android development. By moving away from XML layouts and embracing a composition model, Compose makes the development process easier and more flexible, allowing developers to build dynamic UIs with less code. Its modern, declarative approach is set to become the standard for Android apps. <br/><br/>
-There's much more to explore! In upcoming posts, we'll cover advanced topics like effective state management, and how to migrate existing projects to Jetpack Compose. Stay tuned for <b>Part 2<b/>!
+There's much more to explore! In upcoming posts, we'll cover advanced topics like effective state management, and how to migrate existing projects to Jetpack Compose. Stay tuned for <b>Part 2!</b>
